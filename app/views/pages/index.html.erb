@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Add Phone Numbers</h1>
+
+  <%= bootstrap_form_for @phone_number, url: phone_numbers_path do |f| %>
+    <%= f.text_field :username %>
+    <%= f.text_field :phone_numbers, name: "phone_form[phone_numbers][]" %>
+    <%= f.text_field :phone_numbers, name: "phone_form[phone_numbers][]" %>
+    <%= f.text_field :phone_numbers, name: "phone_form[phone_numbers][]" %>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+</div>
